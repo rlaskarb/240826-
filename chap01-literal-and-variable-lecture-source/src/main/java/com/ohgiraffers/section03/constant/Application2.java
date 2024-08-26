@@ -20,7 +20,7 @@ public class Application2 {
         /*단어와 단어 사이의 연결은 언더스코어를 사용한다.*/
         final int MAX_AGE = 60;
 
-        /*수정함~!*
+        /*수정함~!*/
 
 
     }
