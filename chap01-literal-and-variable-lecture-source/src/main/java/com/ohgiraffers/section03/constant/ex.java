@@ -20,7 +20,7 @@ public class ex {
 
         System.out.println("면적 : " + (a * b));
         System.out.println("둘레 : " + (a *2 + b*2));
-        
+
 
 
 
