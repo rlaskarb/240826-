@@ -1,0 +1,48 @@
+package com.ohgiraffers.section05.lofical;
+
+public class Application2 {
+    public static void main(String[] args) {
+
+        /*수업목표 논리연산자의 우선순위에 대해 이해하고 활용해보자. */
+
+        /*필기
+        * 논리 연산자의 우선순위와 활용
+        * 논리 and 연산자와 논리 or 연산자의 우선순위
+        * && : 11순위
+        * || : 12순위
+        * */
+
+        /* 목차 1. 1부터 100 사이의 값인지 확인 */
+        int num1 = 55;
+
+        System.out.println("num1 이 1부터 100사이인 값인지 확인 : " + (num1 >= 1 && num1 <= 100 ) );
+
+        /*목차 2 영어 대문자인지 확인 */
+        char ch1 = 'G';
+        System.out.println("ch1 이 영어 대문자인지 확인 : " + (ch1 >= 'A' && ch1 <= 'Z') );
+
+        /* 번외 */
+        // a 는 A 보다 클까? -> 구글링 하지 말아보자 ->
+
+        char aTest = 'a';
+        char ATest = 'A';
+
+        int aTOInt = aTest;
+        int ATotInt = ATest;
+
+        System.out.println("aToInt = " + aTOInt);
+        System.out.println("ATotInt = " + ATotInt);
+
+
+        /* 목차 3 'f' 대소문자 상관 없이 영어인지 확인해보기 */
+
+        char ch2 = 'f';
+
+        System.out.println("f 가 영문자인지 확인 :" + ((ch2 >= 'a' && ch2 <= 'z') || (ch2 >= 'A' && ch2 <= 'Z')) );
+
+
+
+
+
+    }
+}
