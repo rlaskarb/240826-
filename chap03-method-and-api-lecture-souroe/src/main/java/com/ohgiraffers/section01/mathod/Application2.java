@@ -49,7 +49,7 @@ public class Application2 {
     public void mathodC() {
         System.out.println("mathodC 뾰로롱~..");
 
-        
+
         System.out.println("mathodC 스르륵~..");
 
 

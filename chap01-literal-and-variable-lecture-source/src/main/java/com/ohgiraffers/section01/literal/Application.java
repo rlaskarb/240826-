@@ -38,5 +38,6 @@ public class Application {
         /* 목차. 4. 문자열 형태의 값 */
         System.out.println(true); // ← 주황색 글자 = 예약어
         System.out.println(false); //
+
     }
 }
