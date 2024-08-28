@@ -28,10 +28,10 @@ public class Application2 {
         char ATest = 'A';
 
         int aTOInt = aTest;
-        int ATotInt = ATest;
+        int AToInt = ATest;
 
         System.out.println("aToInt = " + aTOInt);
-        System.out.println("ATotInt = " + ATotInt);
+        System.out.println("AToInt = " + AToInt);
 
 
         /* 목차 3 'f' 대소문자 상관 없이 영어인지 확인해보기 */

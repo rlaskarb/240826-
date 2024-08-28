@@ -36,7 +36,7 @@ public class Application3 {
         int num2 = 10;
 
         int result2 = (true || ++num2 > 0) ? num2 : num2;
-        System.out.println("|| 연산 실행 확인 : " + result2 );
+        System.out.println("|| 연산 실행 확인 : " + result2);
 
 
 

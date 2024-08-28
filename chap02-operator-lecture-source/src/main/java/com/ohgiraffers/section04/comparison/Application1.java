@@ -16,7 +16,7 @@ public class Application1 {
         /*필기
         * 비교연산자의 종류
         * '=='(같냐?) : 왼쪽 피연산자와 오른쪽 피연산자가 같으면 true, 다르면 false
-        * '!='(안 같냐?) : 왼쪽 피연산자와 오른쪽 피연산자가 다르면 true, 다르면 false
+        * '!='(안 같냐?) : 왼쪽 피연산자와 오른쪽 피연산자가 다르면 true, 같으면 false
         * - ! -> 부정이다.
         * '>' : 왼쪽이 피연산자가 오른쪽 피연산자 보다 크면 true, 다르면 false
         * '>=' : 왼쪽이 피연산자가 오른쪽 피연산자 보다 크거나 같으면 true, 다르면 false
@@ -35,6 +35,8 @@ public class Application1 {
         System.out.println("num1 이 num2 보다 작은 지 비교 : " + (num1 < num2));
         System.out.println("num1 이 num2 보다 크거나 같은 지 비교 : " + (num1 >= num2));
         System.out.println("num1 이 num2 보다 작거나 같은 지 비교 : " + (num1 <= num2));
+
+        System.out.println("=======================================================");
 
         /*목차 2 문자 값 비교*/
         char ch1 = 'a';
