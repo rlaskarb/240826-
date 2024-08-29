@@ -13,6 +13,7 @@ public class Application2 {
 
 
         /*목차 4. mathodA(), mathodB(), mathodC() 차례로 호출을 해보자.*/
+
         // 클래스명 변수명 = new 클래스명();
         // 변수명,메소드명();
 

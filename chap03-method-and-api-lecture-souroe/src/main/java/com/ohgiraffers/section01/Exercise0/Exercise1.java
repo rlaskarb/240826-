@@ -1,4 +1,4 @@
-package com.ohgiraffers.section01.mathod;
+package com.ohgiraffers.section01.Exercise0;
 
 public class Exercise1 {
 
