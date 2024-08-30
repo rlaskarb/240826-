@@ -16,8 +16,7 @@ public class Application3 {
         System.out.println("randomNumber : " + randomNumber);
 
         //1~10
-        int randomNumber2 = random.nextInt(10) + 0;
-
+        int randomNumber2 = random.nextInt(11) + 1;
         System.out.println("randomNumber2 :" + randomNumber2);
 
         //10~15
