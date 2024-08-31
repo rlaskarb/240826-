@@ -13,4 +13,18 @@ public class RandomMaker2 {
         return result;
 
     }
+
+    public String rockPaperScissors(){
+        Random random = new Random();
+        int randomNumber = random.nextInt(3);
+
+        String result = (randomNumber == 0) ? "가위" : (randomNumber ==1) ? "바위" : "보";
+        return result;
+
+
+    }
+
+
+
+
 }

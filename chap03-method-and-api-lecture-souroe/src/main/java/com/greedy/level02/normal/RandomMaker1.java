@@ -31,6 +31,26 @@ public class RandomMaker1 {
         System.out.println("지정한 범위의 난수는 " + random +"  입니다." );
 
 
+        System.out.println("============================================");
+
+        System.out.println("두번째 게임을 시작 하겠습니다.");
+        System.out.println("두번째 게임은 가위,바위,보 중 한 가지를 반환합니다.");
+        System.out.println("시작 하겠습니다.");
+        String game = rm.rockPaperScissors();
+        System.out.println("가위 ~ 바위 ~ 보 : " + game );
+
+
+        System.out.println("===============================================");
+
+
+
+
+
+
+
+
+
+
 
 
 
