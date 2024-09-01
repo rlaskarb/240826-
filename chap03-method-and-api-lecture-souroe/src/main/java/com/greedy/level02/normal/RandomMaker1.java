@@ -42,6 +42,13 @@ public class RandomMaker1 {
 
         System.out.println("===============================================");
 
+        System.out.println("== 세번째 게임을 시작해 보겠습니다.==");
+        System.out.println("== 동정의 앞면, 뒷면 중 한가지를 고르시면 됩니다.");
+        System.out.println("== 그럼 시작하겠습니다.==");
+        String coinGame = rm.tossCoin();
+        System.out.println("동전을 던졌을 떄의 결과는????");
+        System.out.println( coinGame + "입니다~!");
+
 
 
 

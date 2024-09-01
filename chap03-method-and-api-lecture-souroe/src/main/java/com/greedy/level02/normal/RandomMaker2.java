@@ -24,7 +24,17 @@ public class RandomMaker2 {
 
     }
 
+public String tossCoin(){
 
+        Random random = new Random();
+        int coin = random.nextInt(2);
+
+        String result = (coin == 0 ) ? "앞면" : "뒷면";
+
+        return result;
+
+
+}
 
 
 }
