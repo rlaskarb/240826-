@@ -1,7 +1,9 @@
 package com.ohgiraffers.section01.literal;
 
 public class Application {
-    public static void main(String[] args) { // 메인 메소드 안에서 프로그램 동작 시킬 수 있다.
+    public static void main(String[] args) {
+
+        // 메인 메소드 안에서 프로그램 동작 시킬 수 있다.
 
         /* 수업목표. 여러가지 값의 형태를 출력할 수 있다. */
 

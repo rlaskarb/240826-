@@ -1,6 +1,6 @@
 package com.greedy.level02.normal;
 
-import java.util.Random;
+
 import java.util.Scanner;
 
 public class RandomMaker1 {
