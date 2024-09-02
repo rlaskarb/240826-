@@ -222,10 +222,97 @@ public void testEx3(){
         }
         System.out.println(first + " " + ch + " " +second + "="+result);
 
+    }
+
+    public void testEx6(){
+        System.out.println("==================================");
+        /*람쥐는 축제 간식 부스에서 일하게 됐어요.
+         *
+         * 간식 이름("캬라멜팝콘", "츄로스", "통감자", "도토리탕후루") 중 한 가지를 문자열로 입려하면
+         * 해당하는 가격에 맞게 상품명과 가격이 출력되게 하세요.
+         *
+         * 단, 목록에 없는 과일을 입력 시 "해당 상품이 판매하지 않습니다." 출력 후 프로그램을 종료합니다.
+         *
+         * -- 상품 가격 --
+         * 캬라멜팝콘 : 15500원
+         * 츄로스 : 3000원
+         * 통감자 : 2000원
+         * 도토리탕후루 : 5000원
+         *
+         * -- 입력 예시 --
+         * 어떤 간식을 주문하시겠어요? 도토리탕후루
+         *
+         * -- 출력 예시 --
+         * 도토리탕후루의 가격은 5000원 입니다*/
+
+        System.out.println("람쥐가 전직장에서 응모권을 빼돌려서 짤렸어요");
+        System.out.println("축제때 한목 단단히 하고자 간식부스를 차렸어요");
+        System.out.println("간식 이름은 C[캬라멜팝콘],Ch[츄로스],P[통감자],D[도토리탕후루] 를 판매해요");
+        System.out.println("람쥐가 눈탱이 못치도록 가격과 상품명이 맞게 만들어주세요");
+        System.out.println("목록에 없는거 판매시 [없는 메뉴 만들는 마법금지!!]출력도 해주세요");
+        Scanner sc = new Scanner(System.in);
+
+
+        System.out.print("간식을 골라주세요~ : ");
+        String select = sc.nextLine();
+
+        int price = 0;
+        String orderMenu = " ";
+        switch (select){
+            case "C":
+                orderMenu = "캬라멜 팝콘";
+                price = 15500;
+                break;
+            case "Ch":
+                orderMenu = "츄로스";
+                price = 3000;
+                break;
+            case "P":
+                orderMenu = "통감자";
+                price = 2000;
+                break;
+            case "D":
+                orderMenu = "도토리 탕후루";
+                price = 5000;
+                break;
+            default :
+                System.out.println("없는 메뉴 만드는 마법사용금지!!!");
+
+        }
+        System.out.println(orderMenu +"의 가격은 :" + price + " 원 입니다.");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

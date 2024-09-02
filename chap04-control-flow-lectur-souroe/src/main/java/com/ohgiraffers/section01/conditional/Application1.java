@@ -31,11 +31,14 @@ public class Application1 {
         System.out.println("==================================");
 
         EX ex= new EX();
-        ex.testEx1();
-        ex.testEx2();
-        ex.testEx3();
-        ex.testEx4();
-        ex.testEx5();
+//        ex.testEx1();
+//        ex.testEx2();
+//        ex.testEx3();
+//        ex.testEx4();
+//        ex.testEx5();
+        ex.testEx6();
+
+
 
 
 
