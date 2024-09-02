@@ -140,13 +140,94 @@ public void testEx3(){
      *
      * -- 출력 예시 --
      * 정상 체중입니다. 축제 재미있게 즐기세요~
-     * */*/
+     * */
 
     public void testEx4(){
-         
+
+        System.out.println("람쥐가 몸이 망가진거 같습니다");
+        System.out.println("다행이도 무료로 건강검진을 받으로 올 생각을 다했네요");
+        System.out.println("간단한 신체검사를 받으로 이동합니다.");
+        System.out.println("키(height),몸무게(weight) 소수점까지 입력해야합니다.");
+        System.out.println("loser는 소수점에도 집착을 합니다(double)입력받아서");
+        System.out.println("BMI(신체질량지수)를 람쥐를 위해서 구해줘야 합니다.");
+
+       Scanner sc = new Scanner(System.in);
+        System.out.print("람쥐의 키를 [M]미터로 적어주세요 :");
+        double height = sc.nextDouble();
+        System.out.print("람쥐의 몸무게를[Kg] 입력해 주세요 : ");
+        double weight = sc.nextDouble();
+        System.out.println("람쥐의 생활패턴이 보이는군요");
+        double bmi = weight/(height * height);
+
+        if (bmi <20) {
+            System.out.println("저체중 이네요. 도박에 쓸돈으로 좀 사드세요");
+        }else if(bmi>=20 && bmi<25){
+            System.out.println("간간히 영양보충을 하셨군요 다행이도 정상입니다.");
+
+        }else if(bmi>=25 && bmi<30){
+            System.out.println("탄수화물 중독자입니까?");
+            System.out.println("중독자를 위한 이벤트가 있습니다");
+            System.out.println("10,000보 을 걷고 오시길바랍니다.");
+            System.out.println("달성시 소정의 상품을 드리겠습니다.");
+
+        }else if(bmi>=30){
+            System.out.println("돼지에겐 선택권이 없습니다.");
+            System.out.println("댄싱 부스에 참가해서 도장을 받아오세요");
+            System.out.println("쉽게 찍어주지 않을겁니다. 각오하세요!");
+            System.out.println("성공하시고 큰 상품을 가져가세요.");
+        }
+        System.out.println("람쥐는 오늘도 하루를 생존하였다...");
 
 
     }
+    /* 간단한 계산기를 만들어 봅시다.
+     *
+     * 두 개의 정수를 입력 받아 변수에 저장하고,
+     * 연산기호(+, -, *, /, %)를 입력 받아 해당 연산의 수행 결과를 출력하세요.
+     * 단, 준비된 연산기호 외의 문자를 입력하는 경우 "입력하신 연산은 없습니다. 프로그램을 종료합니다." 출력 후 프로그램을 종료합니다.
+     *
+     * -- 입력 예시 --
+     * 첫 번째 정수 : 4
+     * 두 번쨰 정수 : 3
+     * 연산 기호를 입력하세요 : +
+     *
+     * -- 출력 예시 --
+     * 4 + 3 = 7
+     */
+
+    public void testEx5(){
+        System.out.println("===================================");
+        System.out.println(" 다큐로 갑니다.");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("첫 번째 정수를 입력해주세요 : ");
+        int first = sc.nextInt();
+        System.out.print("두 번쨰 정수를 입력해주세요 : ");
+        int second = sc.nextInt();
+
+        System.out.println("연산기호 입력 [ + , - , * , / , % ] ");
+        char ch = sc.next().charAt(0);
+        int result = 0;
+
+        switch(ch){
+            case '+' :
+                result = first + second ; break;
+            case '-' :
+                result = first - second ; break;
+            case '*' :
+                result = first * second ; break;
+            case '/' :
+                result = first / second ; break;
+            case '%' :
+                result = first % second ; break;
+        }
+        System.out.println(first + " " + ch + " " +second + "="+result);
+
+
+
+
+    }
+
+
 
 
     }
