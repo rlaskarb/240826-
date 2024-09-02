@@ -50,6 +50,23 @@ public class RandomMaker1 {
         System.out.println( coinGame + "입니다~!");
 
 
+        System.out.println("====================================================");
+        int a=11;
+        int b=-5;
+        int c=(a++) - b--;
+        int d=++c + a--;
+
+        System.out.println("a : " + a);
+        System.out.println("b : " + b);
+        System.out.println("c : " + c);
+        System.out.println("d : " + d);
+        System.out.println("추가연산 : " +(a++- --b + c++));
+
+
+
+
+
+
 
 
 
