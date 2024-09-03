@@ -29,8 +29,8 @@ public class Application1 {
 //        c.whileExample2();
 
         D_doWhile d = new D_doWhile();
-        d.testDoWhileStatement();
-
+//        d.testDoWhileStatement();
+        d.doWhileExample();
 
 
 
