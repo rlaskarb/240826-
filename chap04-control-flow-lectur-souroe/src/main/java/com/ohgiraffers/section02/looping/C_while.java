@@ -46,7 +46,7 @@ public class C_while {
       System.out.println("============for 문====================");
       //ex) 안녕 -> 안 녕
 
-      for(int i= 0;i<str.length();i++){
+      for(int i= 0; i<str.length(); i++){
           char ch = str.charAt(i);
           System.out.println( i + "번째 :" + ch );
       }
