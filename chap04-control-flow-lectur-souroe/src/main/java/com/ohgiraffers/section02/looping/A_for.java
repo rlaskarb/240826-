@@ -20,7 +20,7 @@ public class A_for {
         //조건식: i <=10;
         //증감식:i++
         for(int i =1; i<=10; i++) { // 초기식;조건식;증감식
-            System.out.println(i);
+            System.out.println(i); //i fot 문 안에서 사용 지역변수.
 
 
         }
@@ -80,8 +80,6 @@ public class A_for {
             String student = sc.nextLine();
             System.out.println(i +"번째 학생의 성적을 입력해주세요 :");
             String grade = sc.nextLine();
-
-
             System.out.print( i+ "번째 학생의 이름은" + student +  "입니다. ");
             System.out.print("성적은 " + grade + "입니다.");
         }
@@ -153,4 +151,74 @@ public class A_for {
         }
         System.out.println("1부터" +random +"까지의 합은 :" + sum);
     }
+
+    public void testForExample4(){
+        /*필기
+        * 숫자 2개를 입력 받아서 작은수에서 큰수까지의 합을 구하세요
+        * 단, 두 숫자는 같지 않다 를 가정하에 진행한다.
+        * */
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("첫번째 정수 입력 : ");
+        int first = sc.nextInt();
+        System.out.print("두번쨰 정수 입력 : ");
+        int second = sc.nextInt();
+
+        // 합산결과를 담을 변수를 만들어두기.
+        int sum =0;
+
+//        for(int i =first; i<=second; i++){
+//
+//            sum += i;
+//
+//            System.out.println("sum :" + sum);
+//        }
+
+        //만약 첫 번째 입력 정수가 더 큰 경우
+        if(first>second) {
+            for(int i = second; i <= first;i++ ){
+                sum += i;
+            }
+
+        }else {// 만약 두번째 입력 정수가 더 큰 경우
+            for(int i = first; i<=second;i++){
+                sum += i;
+            }
+
+        } System.out.println("sum :" + sum);
+
+
+    }
+
+
+    public void printSimpleGugudan(){
+
+        /*필기
+        * 스캐너로 2~9사이의 구구단을 받아
+        * 2~9 사이인 경우 구구단을 출력하고,
+        * 그렇지 않은 경우 [반드시 2~9 사이의 양수를 입력해주세요]-경고문작성
+        * 를 출력해보자.
+        * */
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("구구단의 단수를 입력해주세요 : ");
+        int dan =sc.nextInt();
+
+        if(dan>=2 && dan <=9){
+
+            for(int su =1; su <=9; su++){
+                System.out.print(dan + " * " + su + " = " +(dan*su));
+
+            }
+
+
+        }else{
+            //dan 2~9사이가 아닌경우 작성해야 할 영역
+            System.out.println("반드시 2~9사이의 양수를 입력해주세요!!!");
+        }
+
+    }
+
+
+
 }

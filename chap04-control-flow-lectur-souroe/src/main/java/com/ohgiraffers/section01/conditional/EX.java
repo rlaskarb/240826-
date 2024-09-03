@@ -282,33 +282,11 @@ public void testEx3(){
         System.out.println(orderMenu +"의 가격은 :" + price + " 원 입니다.");
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
+    public void testEx7(){
 
-
-
-
-
-
+    }
 
 
 

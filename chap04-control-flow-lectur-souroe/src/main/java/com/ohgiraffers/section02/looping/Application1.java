@@ -10,6 +10,18 @@ public class Application1 {
 
 //        a.testForExample2();
 
-        a.testForExample3();
+//        a.testForExample3();
+
+//        a.printSimpleGugudan();
+
+        B_nestedFor b = new B_nestedFor();
+
+//        b.printGugudanTowToNinie();
+//        b.upgradeGugudanTowToNine();
+        b.printStarInputRowTimes();
+
+
+
     }
+
 }
