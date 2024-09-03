@@ -36,7 +36,11 @@ public class Application1 {
 //        ex.testEx3();
 //        ex.testEx4();
 //        ex.testEx5();
-        ex.testEx6();
+//        ex.testEx6();
+//        ex.testEx7();
+//        ex.testEx8();
+
+
 
 
 

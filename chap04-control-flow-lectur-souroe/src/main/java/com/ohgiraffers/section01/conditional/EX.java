@@ -285,14 +285,83 @@ public void testEx3(){
     }
 
     public void testEx7(){
+        System.out.println("============================================");
+        System.out.println("람쥐는 전과가 있어서 감사(인사평가)를 받아야합니다.");
+        System.out.println("람쥐가 1. 성실했는지");
+        System.out.println("람쥐가 2. 서비스가 좋았는지");
+        System.out.println("람쥐가 3. 밝은 미소로 대응했는지");
+        System.out.println("평가를 해야 됩니다. 그럼 평가를 시작하겠습니다.");
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("람쥐의 성실도 점수 : ");
+        int sincerity = sc.nextInt();
+        System.out.print("람쥐의 서비스 점수 : ");
+        int service = sc.nextInt();
+        System.out.print("람쥐 밝은 미소 점수 : ");
+        int smile = sc.nextInt();
+
+        int average = (sincerity + service + smile) / 3;
+
+        if(average>=60 && sincerity>=40 && service>=40 && smile>=40){
+            System.out.println("축하합니다. 노예 연장 평가에서 합격 했습니다.");
+        }else {
+            if(average<60){
+                System.out.println("평균점수에서 미달되어 람쥐님은 저희와 함께 할수 없습니다.");
+            }
+            if(sincerity<40){
+                System.out.println("성실하지 못하시군요 람쥐님은 저희와 함께 할수 없습니다.");
+            }
+            if(service<40){
+                System.out.println("서비스가 개판이군요 람쥐님은 저희와 함께 할수 없습니다.");
+            }
+            if(smile<40){
+                System.out.println("인상이 참 좋지 않군요 람쥐님은 저희와 함께 할수 없습니다.");
+            }
+
+        }
 
     }
 
+    public void testEx8(){
+        System.out.println("람쥐가 새삶을 살기위해 열심히 일을 했군요!");
+        System.out.println("오늘은 람쥐의 월급날입니다.");
+        System.out.println("람쥐가 급여를 잘 받았는지 확인을 하는군요! ");
+        System.out.println("람쥐가 다니는 회사에 복지에 인센티브 제도가 있군요");
+        System.out.println("꼼꼼히 따지는 람쥐!!");
+        System.out.println("인센티브(보너스)는 매출액에 비례하여 퍼센트로 지급을 하는군요!!");
+        System.out.println("매출액 : 5천만원 이상시 보너스율 5% ");
+        System.out.println("매출액 : 3천만원 이상시 보너스율 3% ");
+        System.out.println("매출액 : 1천만원 이상시 보너스율 1% ");
+        System.out.println("매출액 : 1천만원 미만시 보너스지급 없음.");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("람쥐의 이번달 급여 : ");
+        int salary = sc.nextInt();
+        System.out.print("이번달 매출액 : ");
+        int income  = sc.nextInt();
 
+        double bonusRate = 0;
+        int totalSalary = 0;
 
+        if(income >= 50000000){
+            bonusRate = 0.05;
+        } else if (income >= 30000000) {
+            bonusRate = 0.03;
+        } else if (income >= 10000000) {
+            bonusRate = 0.01;
+        } else {
+            bonusRate = 0;
+        }
 
+        totalSalary = salary +(int)(income*bonusRate);
+        System.out.println("=======================");
+        System.out.println("매출액 : " + income);
+        System.out.println("보너스울 : " + (bonusRate*100) + "%");
+        System.out.println("월 급여 : " + salary);
+        System.out.println(" 보너스 금액 : " + (int)(bonusRate*income));
+        System.out.println("========================");
+        System.out.println("총 급여 : " + totalSalary);
 
-
+    }
 
 
     }
