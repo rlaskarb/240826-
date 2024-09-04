@@ -80,6 +80,18 @@ public class EX {
 
     }
 
+    public  void  Ex7(){ }
+
+    Scanner sc = new Scanner(System.in);
+
+    while(true){
+        System.out.println("2보다 큰 정수를 하나 입력하세요 : ");
+        int num =sc.nextInt();
+
+        boolean check = true;
+
+        
+    }
 
 
 }

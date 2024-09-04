@@ -37,9 +37,7 @@ public class B_nestedFor {
 
         for (int su = 1; su <= 9; su++) {
             System.out.println(dan + " * " + su + " = " + (dan * su));
-
         }
-
     }
 
     public void printStarInputRowTimes() {
@@ -67,7 +65,6 @@ public class B_nestedFor {
 
             //한줄 띄우기
             System.out.println();
-
         }
     }
 
@@ -75,9 +72,7 @@ public class B_nestedFor {
 
         for (int i = 1; i <= times; i++) {
             System.out.print("*");
-
         }
-
     }
 
 
@@ -100,7 +95,6 @@ public class B_nestedFor {
             }
             System.out.println();
         }
-
     }
 
 
@@ -115,21 +109,8 @@ public class B_nestedFor {
                 System.out.print("*");
             }
             System.out.println();
-
-
-        }
-
-
-    }
-
-    public void starpidamid(){
-
-
-
         }
     }
 
 
-
-
-
+        }
