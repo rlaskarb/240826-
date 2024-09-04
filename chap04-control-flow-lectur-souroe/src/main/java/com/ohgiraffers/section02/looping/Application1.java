@@ -37,7 +37,9 @@ public class Application1 {
 //        ex.Ex2();
 //        ex.Ex3();
 //        ex.Ex4();
-        ex.Ex5();
+//        ex.Ex5();
+//        ex.Ex6();
+
 
 
 

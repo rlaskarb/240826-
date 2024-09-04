@@ -50,13 +50,35 @@ public class EX {
 
     public void Ex5(){
         Scanner sc =new Scanner(System.in);
-        String str = sc.nextLine();
-        for(int i =0; i<str.length(); i++){
-            char ch = str.charAt(i);
-            System.out.print(i +"번째" + ch);
+
+        for(int i ='a'; i<='z'; i++){
+
+            System.out.print((char)i);
         }
+        System.out.println();
     }
 
+    public void Ex6(){
+
+        String str1 = "토";
+        String str2 = "마";
+        String result = " ";
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("정수를 입력하세요 : ");
+        int num = sc.nextInt();
+
+        for(int i =1;i<=num; i++){
+            if(i%2==0){
+                result += str1;
+            }else{
+                result += str2;
+            }
+        }
+        System.out.println(result);
+        sc.close();
+
+    }
 
 
 
