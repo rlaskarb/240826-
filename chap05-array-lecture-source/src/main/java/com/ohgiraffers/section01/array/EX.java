@@ -97,3 +97,6 @@ public class EX {
         System.out.println("입력하신 문자열" + str + "에서 찾으시는 문자" + ch + "는" + count +"개 입니다.");
     }
 }
+
+
+/*z*/
