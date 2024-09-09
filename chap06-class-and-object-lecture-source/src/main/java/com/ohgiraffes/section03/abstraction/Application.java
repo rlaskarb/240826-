@@ -1,4 +1,4 @@
-package com.ohgiraffes.section3.abstraction;
+package com.ohgiraffes.section03.abstraction;
 
 import java.util.Scanner;
 

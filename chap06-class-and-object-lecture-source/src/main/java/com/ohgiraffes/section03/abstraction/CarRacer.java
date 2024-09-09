@@ -1,4 +1,4 @@
-package com.ohgiraffes.section3.abstraction;
+package com.ohgiraffes.section03.abstraction;
 
 public class CarRacer {
     //클래스도 자료형이다.

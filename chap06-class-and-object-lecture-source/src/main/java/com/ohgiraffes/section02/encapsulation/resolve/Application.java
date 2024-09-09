@@ -18,4 +18,5 @@ public class Application {
         * 이것을 캡슐화(encapsulation)이라고 한다.(유지보수성)*/
 
     }
+
 }
