@@ -13,7 +13,9 @@ public class Application {
         * 2. Application 에서 플레이어가 전체 회원 조회 시 등록 된 회원 정보 반환
         * */
 
+        //스캐너를 사용하는 이유는 내가 보고싶은 정보를 보고싶을때 쉽게 찾아서 보기 위해서.
         Scanner sc = new Scanner(System.in);
+        //MemberManager 를 내가 타이핑 하기 편하게 새로운 이름을 만들고 그다음 new
         MemberManager manager = new MemberManager();
 
         while(true){
