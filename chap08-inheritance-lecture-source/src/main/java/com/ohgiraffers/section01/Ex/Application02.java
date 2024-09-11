@@ -1,5 +1,7 @@
 package com.ohgiraffers.section01.Ex;
 
+import com.ohgiraffers.section01.extend.Car;
+
 public class Application02 {
     public static void main(String[] args) {
 
@@ -48,7 +50,20 @@ public class Application02 {
         * 3.부모 클래레스에서는 의미 있는 기능이 자식에선 의미가 무의미 수 있다.
         */
 
-        /*indwx 1.*
+        /*목차 1. Car 인스턴스 생성 후 메소드 호출*/
+
+        Car1 car1 = new Car1();
+        car1.soundHorn();
+        car1.run();
+        car1.soundHorn();
+        car1.stop();
+        car1.soundHorn();
+        System.out.println("======================");
+
+        /*목차 2. FireCar 인스턴스 생성 */
+
+
+
 
     }
 }
