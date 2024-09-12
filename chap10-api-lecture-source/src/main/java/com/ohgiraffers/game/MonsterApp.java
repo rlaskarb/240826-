@@ -11,7 +11,16 @@ public class MonsterApp {
 
         Scanner sc = new Scanner(System.in);
 
-        m.Monster1() m
+       String str1 = m.Monster1();
+       String str2 = m.Monster2();
+       String str3 = m.Monster3();
+
+        System.out.println("str1 = " + str1);
+
+
+
+
+
 
 
     }

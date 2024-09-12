@@ -36,22 +36,26 @@ public class Monster {
                  " 입니다." ;
     }
 
-    public void Monster1(){
+    public String Monster1(){
         Monster monster1 = new Monster();
         monster1.setName("슬라임");
         monster1.setHp(10);
         monster1.setattack(30);
+        return getInfo();
     }
-    public void Monster2(){
+    public String Monster2(){
         Monster monster2 = new Monster();
         monster2.setName("주황버섯");
         monster2.setHp(30);
         monster2.setattack(50);
+        return getInfo();
     }
-    public void Monster3(){
+    public String Monster3(){
         Monster monster3 = new Monster();
         monster3.setName("머쉬맘");
         monster3.setHp(50);
         monster3.setattack(70);
+        return getInfo();
     }
+
 }
