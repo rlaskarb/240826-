@@ -17,7 +17,7 @@ public class FinalFieldTest {
     *    */
 
 
-    /*목차 1. non-stati+c 필드에 final 사용 */
+    /*목차 1. non-static 필드에 final 사용 */
 
     /*필기
     * 인스턴스가 생성 될 때 int 자료형의 기본값이 0이 필드에 들어가는데
