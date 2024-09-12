@@ -39,7 +39,7 @@ public class Application1 {
         // 3번 몬스터 생성
         Monster monster3 = new Monster();
         monster3.name= "티니핑";
-        monster3.setHp(-200);
+        monster3.setHp(200);
 
         System.out.println("monster3.name = " + monster3.name);
         System.out.println("monster3.hp = " + monster3.hp);
@@ -52,7 +52,7 @@ public class Application1 {
         * */
         Monster monster4 = new Monster();
         monster4.name ="핑";
-        monster4.hp = -10000000;
+        monster4.hp = 10000000;
 
         System.out.println("monster4.name = " + monster4.name);
         System.out.println("monster4.hp = " + monster4.hp);
