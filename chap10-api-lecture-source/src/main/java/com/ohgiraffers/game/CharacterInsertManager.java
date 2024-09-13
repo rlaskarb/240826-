@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CharacterInsertManager {
 
-    public void characterInsertManager(){
+    public void characterInsertManager() {
         // 직업 선택하는 switch 만들기
         Scanner sc = new Scanner(System.in);
         System.out.println("케릭터를 생성을 시작합니다.");
@@ -34,50 +34,48 @@ public class CharacterInsertManager {
         System.out.println();
         System.out.println();
 
-        System.out.println("자 캐릭터를 고를 시간이 왔습니다.");
-        System.out.print("몇번을 선택 하시겠습니까? : ");
-        int answer = sc.nextInt();
+        while (true) {
+            System.out.println("자 캐릭터를 고를 시간이 왔습니다.");
+            System.out.print("몇번을 선택 하시겠습니까? : ");
+            int answer = sc.nextInt();
 
-        Character_DTO[] characters = new Character_DTO[5];
-        characters[1] = new Character_DTO(1,"전사",70,30);
-        characters[2] = new Character_DTO(2,"궁수",70,30);
-        characters[3] = new Character_DTO(3,"마법사",70,30);
-        characters[4] = new Character_DTO(4,"도적",70,30);
+            Character_DTO[] characters = new Character_DTO[5];
+            characters[1] = new Character_DTO(1, "전사", 70, 30);
+            characters[2] = new Character_DTO(2, "궁수", 70, 30);
+            characters[3] = new Character_DTO(3, "마법사", 70, 30);
+            characters[4] = new Character_DTO(4, "도적", 70, 30);
 
-        while ()
 
-        switch (answer){
-            case 1 :
-                characters[1] =new Character_DTO(1,"전사",70,30);
-                System.out.println();
-                System.out.println("게임의 근본을 선택 하셨습니다. !!");
-                break;
-            case 2 :
-                characters[2] =new Character_DTO(2,"궁수",70,30);
-                System.out.println();
-                System.out.println("활은 들고 있지만 화살은 없는 궁수를 선택 하셨습니다 !!!");
-                break;
-            case 3 :
-                characters[3] =new Character_DTO(3,"마법사",70,30);
-                System.out.println();
-                System.out.println("마력이 없는 힘법사를 선택하셨습니다 !!");
-                break;
-            case 4 :
-                characters[4] =new Character_DTO(4,"도적",70,30);
-                System.out.println();
-                System.out.println("발이 느린 도적을 선택하셨습니다.!!!");
-                break;
-            default:
-                System.out.println();
-                System.out.println("너무 많은걸 바라지 않았으면 좋겠어!! 다시 선택해줘 ");
-                return;
+            switch (answer) {
+                case 1:
+                    characters[1] = new Character_DTO(1, "전사", 70, 30);
+                    System.out.println();
+                    System.out.println("게임의 근본을 선택 하셨습니다. !!");
+                    break;
+                case 2:
+                    characters[2] = new Character_DTO(2, "궁수", 70, 30);
+                    System.out.println();
+                    System.out.println("활은 들고 있지만 화살은 없는 궁수를 선택 하셨습니다 !!!");
+                    break;
+                case 3:
+                    characters[3] = new Character_DTO(3, "마법사", 70, 30);
+                    System.out.println();
+                    System.out.println("마력이 없는 힘법사를 선택하셨습니다 !!");
+                    break;
+                case 4:
+                    characters[4] = new Character_DTO(4, "도적", 70, 30);
+                    System.out.println();
+                    System.out.println("발이 느린 도적을 선택하셨습니다.!!!");
+                    return;
+                default:
+                    System.out.println();
+                    System.out.println("너무 많은걸 바라지 않았으면 좋겠어!! 다시 선택해줘 ");
+                    break;
+
+            }
+
 
         }
 
-
-
-
-
     }
-
 }
