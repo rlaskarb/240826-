@@ -23,7 +23,7 @@ public class FireCar extends Car {
         if(isRunning()){
             System.out.println("야이거 방탄유리야 새퀴들아 뒤지기 싫으면 비켜!!!!!!!");
         }else{
-            System.out.println("풀 악셀!!!!!!!!!!!!!!!!!! 위엄을 보여주겠다!");
+            System.out.println("가만히 있어 주겠다!");
         }
 
     }

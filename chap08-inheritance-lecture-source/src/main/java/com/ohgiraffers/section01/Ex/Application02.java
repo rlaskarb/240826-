@@ -1,6 +1,7 @@
 package com.ohgiraffers.section01.Ex;
 
 import com.ohgiraffers.section01.extend.Car;
+import com.ohgiraffers.section01.extend.FireCar;
 
 public class Application02 {
     public static void main(String[] args) {
@@ -61,6 +62,26 @@ public class Application02 {
         System.out.println("======================");
 
         /*목차 2. FireCar 인스턴스 생성 */
+        FireCar1 fireCar1 = new FireCar1();
+        fireCar1.soundHorn();
+        fireCar1.run();
+        fireCar1.soundHorn();
+        fireCar1.stop();
+        fireCar1.soundHorn();
+
+        /*상속은 물려받은 것 뿐만 아니라 확장도 할수 있다.*/
+
+        fireCar1.speatWater();
+
+        System.out.println("**************************");
+
+        /*경적이 없는 차를 만들어 보기 */
+        FarmCar1 farmCar1 = new FarmCar1();
+        farmCar1.soundHorn();
+        farmCar1.run();
+        farmCar1.soundHorn();
+        farmCar1.stop();
+        farmCar1.soundHorn();
 
 
 

@@ -11,6 +11,7 @@ public class FarmCar extends Car {
     public void soundHorn() {
         System.out.println("어휴 급하면 어제오지 그랬슈");
     }
+    
 
     @Override
     public void stop() {
