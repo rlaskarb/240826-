@@ -73,6 +73,7 @@ public class CharacterManager {
                 default:
                     System.out.println();
                     System.out.println("너무 많은걸 바라지 않았으면 좋겠어!! 다시 선택해줘 ");
+                    System.out.println();
                     continue;
             }
             break;
