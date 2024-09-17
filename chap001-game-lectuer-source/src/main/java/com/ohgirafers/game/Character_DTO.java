@@ -1,4 +1,4 @@
-package com.ohgiraffers.game;
+package com.ohgirafers.game;
 
 
 public class Character_DTO {
@@ -12,12 +12,34 @@ public class Character_DTO {
 
     //모든 필드를 초기화 하는 생성자
 
-    public Character_DTO(int no, String job, int hp, int power, int exp) {
-        this.level =level;
+    public Character_DTO(int level, String job, int hp, int power, int exp) {
+        this.level =1;
         this.job=job;
-        this.hp =hp;
-        this.power=power;
-        this.exp=exp;
+        this.hp =70;
+        this.power=50;
+        this.exp=0;
+    }
+
+    public void gameMonster(Monster_DTO monster){
+        if(this.power>monster.getHp()){
+            this.exp+=monster.getExp();
+            System.out.println("몬스터를 물리쳤습니다. 경험치 : " + monster.getExp() + "획득" );
+            while (this.exp >= 50){
+                levelUP();
+            }
+        }else {
+            System.out.println("몬스터에게 패배하였습니다 Game Over ");
+        }
+    }
+
+
+
+    private void levelUP() {
+        System.out.println("레벨업!! : " + this.level);
+        this.level++;
+        this.hp += 50;
+        this.power += 50;
+        this.exp -= 50; // 레벨업 후 남은 경험치
     }
 
 
@@ -31,14 +53,6 @@ public class Character_DTO {
         this.level = level;
     }
 
-
-    public String getJob() {
-        return job;
-    }
-
-    public void setJob(String job) {
-        this.job = job;
-    }
 
     public int getHp() {
         return hp;

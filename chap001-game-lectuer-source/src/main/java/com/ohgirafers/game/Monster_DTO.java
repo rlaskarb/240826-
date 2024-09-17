@@ -1,4 +1,4 @@
-package com.ohgiraffers.game;
+package com.ohgirafers.game;
 
 public class Monster_DTO {
 
