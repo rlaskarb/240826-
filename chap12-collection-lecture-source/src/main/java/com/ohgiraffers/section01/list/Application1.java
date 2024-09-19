@@ -26,7 +26,7 @@ public class Application1 {
         *   -Vector , ArrayList , LinkedList , Stack , Queue 등이 있다.
         *
         * 2. Set 인터페이스
-        *   -순서가 없는 테이터 집합으로 데이터 중복 저장을 하용하지 않음.
+        *   -순서가 없는 테이터 집합으로 데이터 중복 저장을 사용하지 않음.
         *   -HashSet , TreeSet 등이 있다.
         *
         * 3. Map 인터페이스
@@ -60,7 +60,7 @@ public class Application1 {
         // 그러면 어떻게 해야 될까?
         // List 인터페이스를 상속받은 클래스로 인스턴스를 생성하면 된다.
 //        List list = new List();
-        //List 를 상송받은 ArrayList 클래스를 이용해서 인스턴스 생성이
+        //List 를 상속받은 ArrayList 클래스를 이용해서 인스턴스 생성
         // 과정이 다형성이다.
         /*필기
         *  다형성을 적용해서 상위 레퍼런스로 ArrayList 객체를 만들 수 있다.
