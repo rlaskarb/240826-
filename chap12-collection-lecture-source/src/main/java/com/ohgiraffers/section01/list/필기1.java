@@ -66,6 +66,20 @@ public class 필기1 {
         list.add(3.1864592);
         list.add(new Date());
 
+        //toString 메소드가 Overriding  되어 있기 떄문에
+        //주소값이 출력이 안되고, 값이 나오고 있다.
+        System.out.println("list = " + list);
+
+        System.out.println("alist = " + alist);
+        System.out.println("alist크기 = " + alist.size());
+
+        System.out.println("===========================");
+        //원하는 인덱스 위치에 값을 추가해보기
+        //새로운 값이 들어갈 인덱스를 지정하면
+        //한칸씩 밀려서 값이 들어가게 된다.
+
+        alist.add(1,"banana");
+        System.out.println("alist = " + alist);
 
 
 

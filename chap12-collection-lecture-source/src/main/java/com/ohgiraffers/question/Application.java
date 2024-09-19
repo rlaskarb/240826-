@@ -20,7 +20,7 @@ public class Application {
             System.out.println(i + "번째 : " +list.get(i));
         }
 
-        System.out.println("============================");
+        System.out.println("=============향상된 fot 문===============");
         for(Book_DTO b : list ){
             System.out.println(b.toString());
         }
@@ -46,7 +46,10 @@ public class Application {
             System.out.println(list.get(i));
         }
 
-        for
+        System.out.println("=======향상된 for 문 =============");
+        for(Book_DTO b : list){
+            System.out.println(b.toString());
+        }
 
 
 
