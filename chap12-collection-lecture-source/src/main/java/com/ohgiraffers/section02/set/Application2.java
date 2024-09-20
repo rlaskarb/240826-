@@ -35,23 +35,10 @@ public class Application2 {
 
         while (lotto.size() < 6) {
             lotto.add(((int) (Math.random() * 45)) + 1);
-
         }
             System.out.println("로또 당첨 번호 생성기 !!");
             System.out.println("두구두구두구두구");
             System.out.println(lotto);
-
-
-//            Set<Integer> lotto = new TreeSet<>();
-//
-//            while (lotto.size() < 6) {
-//                lotto.add(((int) (Math.random() * 45)) + 1);
-//            }
-//
-//            System.out.println("이번 주 로또 당첨 번호는!!!");
-//            System.out.println(" 두구 두구 두구 두구 ");
-//            System.out.println(lotto);
-////
 
 
         }
