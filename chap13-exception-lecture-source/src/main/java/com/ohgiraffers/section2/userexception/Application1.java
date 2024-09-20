@@ -19,11 +19,13 @@ public class Application1 {
             //물건의 가격이 가진돈보다 큼
 //            et.catchEnoughMoney(10000,5000);
             // 정상
-//            et.catchEnoughMoney(3000,5000);
+            et.catchEnoughMoney(10000,5000);
 
 
         } catch (Exception e) {
+
             throw new RuntimeException(e);
+
 
         }
     }
