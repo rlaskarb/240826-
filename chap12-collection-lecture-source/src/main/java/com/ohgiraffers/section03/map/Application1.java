@@ -1,9 +1,6 @@
 package com.ohgiraffers.section03.map;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Application1 {
     public static void main(String[] args) {
@@ -12,7 +9,7 @@ public class Application1 {
         /*comment
         * Map 인터페이스 특징
         * 일반적인 Collection 인터페이스와는 다른저장 방식을 가지고 있다.
-        * Map의 가장 큰 특징은 
+        * Map 의 가장 큰 특징은
         * 키 (Key) 와 값 (value) 를 하나의 세트로 저장하는 방식이다.*/
         
         /*comment
@@ -63,6 +60,7 @@ public class Application1 {
 
         System.out.println("===========================");
 
+        // remove Key값 삭제할때 사용한다.
         hmap.remove(12);
         System.out.println("hmap = " + hmap);
 
@@ -79,14 +77,14 @@ public class Application1 {
         hamp2.put("four","mybatis");
         hamp2.put("five","jpa");
 
-        /*index 1. KeySet() 을 이용ㅎ서 키만 따로 Set 으로 만들고, iterator() 로 목록 만들기 */
+        /*index 1. keySet() 을 이용ㅎ서 키만 따로 Set 으로 만들고, iterator() 로 목록 만들기 */
         Set<String> keySet = hamp2.keySet(); // set 방식으로 바뀜
-//        Integer<String> keyInter = keySet.iterator(); // iterator 방식으로 바뀜
+        Iterator<String> keyInter = keySet.iterator(); // iterator 방식으로 바뀜
 
-//        /*index 2 Iterator 에서 제공하는 hasNext(), next() 메소드 사용해서 반복문*/
-//        while (keyInter.hasNext()){
-//            String key = keyInter.next();
-//            String value = hamp2.get(key);
-//        }
+        /*index 2 Iterator 에서 제공하는 hasNext(), next() 메소드 사용해서 반복문*/
+        while (keyInter.hasNext()){
+            String key = keyInter.next();
+            String value = hamp2.get(key);
+        }
     }
 }

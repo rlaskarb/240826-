@@ -1,18 +1,18 @@
 package com.ohgiraffers.section03.map;
 
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Properties;
 
 public class Application2 {
     public static void main(String[] args) {
+       /*title Prorerties 에 대해 이해할 수 있다.*/
+
         /*comment
         * properties 란?
         * HashMap 을구현하여 사용방법이 거의 유사하지만
         * 차별점은 key 와 value 모두 문자열만 사용할수 있다는 것이다
         * 사용하는 예시는 대부분 설정관련 파일의 값을 읽어
-        * 어플리케이션에 적용하기 우해 사용한다. */
+        * 어플리케이션에 적용하기 위해 사용한다. */
 
         //Properties 는 값의 의미를 가졌다.
         Properties prop = new Properties();
@@ -34,5 +34,20 @@ public class Application2 {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+        /* index 1. OutPut 으로 파일을 내보냈다. 그러면 이제 내보낸 파일을 읽어보자. */
+        Properties prop2 = new Properties();
+        try {
+            prop2.load(new FileInputStream("driver.dat"));
+            prop2.load(new FileReader("driver.txt"));
+            prop2.loadFromXML(new FileInputStream("driver.xml"));
+
+            //List -> properties 의 모든 키와 값 목록을 내보내기 한다.
+            prop2.list(System.out);
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }
