@@ -12,7 +12,7 @@ public class ExceptionCheck {
                 case '+','-','%','/' :
                     break;
                 default :
-                    throw new NoUseCommandException("사용하지 않는 부호입니다.");
+                    throw new NoUseCommandException("사용하지 않는 부호입니다.!");
             }
         }else {
             switch (str.charAt(0)){
