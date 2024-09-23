@@ -20,6 +20,7 @@ public class BookMenu {
         // 6. 끝내기 // main()으로 리턴
         // 메뉴 화면 반복 실행 처리
         // 해당 메뉴 번호에 따라 BookManager 클래스 메소드 실행
+<<<<<<< HEAD
         Scanner sc = new Scanner(System.in);
         BookManager bm = new BookManager();
 
@@ -28,6 +29,8 @@ public class BookMenu {
 
 
 
+=======
+>>>>>>> 688b5c53e855e9dd09bc4bf2aa07ffd7a0284014
 
     }
 
@@ -36,6 +39,7 @@ public class BookMenu {
         // "도서 장르 : " (1: 인문 / 2:자연과학 / 3:의료 / 4.기타) : " >>입력 받음(숫자로)
         // "도서 저자 : " >> 입력받음
         // 매개변수 생성자를 이용하여 위의 초기값을 이용한  BookDTO 객체 리턴
+<<<<<<< HEAD
 
         Scanner sc = new Scanner(System.in);
         System.out.print("도서 제목을 입력하세요");
@@ -49,6 +53,9 @@ public class BookMenu {
         String author = sc.nextLine();
 
         return null; // 여기부터 다시 !!
+=======
+        return null;
+>>>>>>> 688b5c53e855e9dd09bc4bf2aa07ffd7a0284014
     }
 
     public int intputBookNo(){
