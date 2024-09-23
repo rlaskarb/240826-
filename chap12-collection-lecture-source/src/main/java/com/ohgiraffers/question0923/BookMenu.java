@@ -36,7 +36,19 @@ public class BookMenu {
         // "도서 장르 : " (1: 인문 / 2:자연과학 / 3:의료 / 4.기타) : " >>입력 받음(숫자로)
         // "도서 저자 : " >> 입력받음
         // 매개변수 생성자를 이용하여 위의 초기값을 이용한  BookDTO 객체 리턴
-        return null;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("도서 제목을 입력하세요");
+        String title = sc.nextLine();
+        System.out.println();
+        System.out.println("1번 : 인문 // 2번 : 자연과학 // 3번 : 의료 // 4번 : 기타 ");
+        System.out.print("도서 장르를 선택하세요(번호로 입력해주세요) : ");
+        int category = sc.nextInt();
+        System.out.println();
+        System.out.print("도서 저자를 입력하세요 : ");
+        String author = sc.nextLine();
+
+        return null; // 여기부터 다시 !!
     }
 
     public int intputBookNo(){

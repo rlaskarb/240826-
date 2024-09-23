@@ -17,11 +17,6 @@ public class BookManager {
     public void addBook(BookDTO book){
         List list = new ArrayList();
 
-        list.add(1,"인문");
-        list.add(2,"자연과학");
-        list.add(3,"의료");
-        list.add(4,"기타");
-
     }
 
 
