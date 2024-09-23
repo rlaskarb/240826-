@@ -20,6 +20,10 @@ public class Calculrator{
         int second = sc.nextInt();
 
 
+
+
+        int result = 0;
+
         switch(ch){
             case '+' :
                 plusMethod(first,second);
@@ -51,11 +55,12 @@ public class Calculrator{
                 }
             default:
                 System.out.println("홈버튼 눌러서 계산기 클릭합니다.!!!!");
+                return;
         }
 
     }
     public void plusMethod (int a ,int b){
-        System.out.println( a + b );
+        System.out.println(a+ " + " + b + "= " + ( a + b ));
     }
 
     public void minusMethod(int a, int b){
