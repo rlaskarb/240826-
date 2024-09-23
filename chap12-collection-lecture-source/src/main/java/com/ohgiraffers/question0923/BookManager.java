@@ -6,6 +6,7 @@ import java.util.List;
 public class BookManager {
 
     public BookManager(){
+        //리스트 초기화 작업
         //해당 BookDTO 객체를 리스트에 담기.
         BookDTO bookDTO = new BookDTO();
 
@@ -15,13 +16,14 @@ public class BookManager {
     }
 
     public void addBook(BookDTO book){
-        List list = new ArrayList();
+        //해당 BookDTO  객체 리스트에 담기
 
     }
 
 
     public void deleteBook(int index ){
         //전달받은 위치의 인덱스 값 제거
+
     }
 
     public void searchBook(String btitle){

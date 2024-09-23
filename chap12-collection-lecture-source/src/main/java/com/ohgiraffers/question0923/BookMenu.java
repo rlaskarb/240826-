@@ -1,5 +1,6 @@
 package com.ohgiraffers.question0923;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class BookMenu {
@@ -41,17 +42,38 @@ public class BookMenu {
         System.out.print("도서 저자를 입력하세요 : ");
         String author = sc.nextLine();
 
-        return null; // 여기부터 다시 !!
+        BookDTO bDTO = new BookDTO();
+        return bDTO; // 여기부터 다시 !!
     }
 
     public int intputBookNo(){
         //" 도서 번호 : " >> 입력 받음 >> 리턴
-        return 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("도서번호 입력 하세요~ : ");
+        int bNo = sc.nextInt();
+        BookDTO bDTO = new BookDTO();
+        return bDTO.getbNo() ;
     }
 
     public String inputBookTitle(){
         //"도서제목 : " >> 입력 받음 >> 리턴
-        return null;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("도서 제목을 입력하세요~ : ");
+        String title = sc.nextLine();
+        BookDTO bDTO = new BookDTO();
+        return bDTO.getTitle() ;
+    }
+    public List<BookDTO> selectSortedBook(){
+        //도서 정렬방식을 정수로 입력받아서
+        //1.도서번호(ISBN)으로 오름차순 정렬
+        //2.도서번호(ISBN)으로 내림차순 정렬
+        //3. 책 제목으로 오름차순 정렬
+        //4. 책 제목으로 내림차순 정렬
+        //BookManager 객체의 sortedBookList() 메소드를 이용하여 출력
+        Scanner sc = new Scanner(System.in);
+
+
+        return List.of();
     }
 
 }

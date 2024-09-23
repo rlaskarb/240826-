@@ -11,7 +11,8 @@ public class BookDTO {
     public void BookDTO(){}
 
     //모든 필드를 초기화 하는 새성자
-    public void BookDTO(int category, String title, String author){
+    public void BookDTO(int bNo,int category, String title, String author){
+        this.bNo = bNo;
         this.category = category;
         this.title = title;
         this.author = author;
@@ -19,25 +20,48 @@ public class BookDTO {
     }
 
     // getter / setter
-    public int getCategory() {return category;}
 
-    public void setCategory(int category) {this.category = category;}
+    public int getbNo() {
+        return bNo;
+    }
 
-    public String getTitle() {return title;}
+    public void setbNo(int bNo) {
+        this.bNo = bNo;
+    }
 
-    public void setTitle(String title) {this.title = title;}
+    public int getCategory() {
+        return category;
+    }
 
-    public String getAuthor() {return author;}
+    public void setCategory(int category) {
+        this.category = category;
+    }
 
-    public void setAuthor(String author) {this.author = author;}
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
 
 
     //toString
 
+
     @Override
     public String toString() {
         return "BookDTO{" +
-                "category=" + category +
+                "bNo=" + bNo +
+                ", category=" + category +
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 '}';
